@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-linear-gradient(blue, red);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 900px;
+  text-align: center;
+  line-height: 30px;
+  flex-wrap: wrap;
+}
+.section p {
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+.section .time {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2em;
+  justify-content: center;
+}
+.section .time span {
+  font-size: 3em;
+}
+.section h2 {
+  margin-top: 1em;
+}
+.section .info {
+  margin-top: 2em;
+}
+.section .info input {
+  height: 40px;
+  background: transparent;
+  border: 2px solid black;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  width: 50%;
+  letter-spacing: 2px;
+  padding-left: 0.4em;
+  font-size: 1em;
+}
+.section .info button {
+  padding: 0 0.7em;
+  background: transparent;
+  border: 2px solid black;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  outline: none;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.1s ease-in-out;
+}
+.section .info button:hover {
+  background-color: lightgray;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-attachment: fixed;
+  }
+  .section {
+    height: 400px;
+    width: 180px;
+  }
+  .section .time {
+    gap: 10px;
+    width: 190px;
+    justify-content: center;
+    font-size: large;
+  }
+  .section .time span {
+    font-size: 2em;
+    justify-content: space-around;
+  }
+  .section .time h3 {
+    font-size: 1em;
+  }
+  .section .info input {
+    width: 100%;
+    height: 36px;
+    font-size: 1em;
+  }
+  .section .info button {
+    margin-top: 0.3em;
+    height: 36px;
+    margin-bottom: 0.6em;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    background-attachment: fixed;
+  }
+  .section {
+    height: 300px;
+    width: 190px;
+  }
+  .section .time {
+    gap: 10px;
+    display: block;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+  }
+  .section .time span {
+    font-size: 2em;
+    justify-content: space-around;
+  }
+  .section .time h3 {
+    font-size: 1em;
+  }
+  .section .info input {
+    width: 100%;
+    height: 30px;
+    font-size: small;
+  }
+  .section .info button {
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    height: 30px;
+    font-size: small;
+  }
+}/*# sourceMappingURL=main.css.map */
